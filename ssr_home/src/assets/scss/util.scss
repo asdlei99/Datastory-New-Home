@@ -1,0 +1,49 @@
+.clearfix:after, .clearfix:before {
+  content: '';
+  display: table;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+  *zoom: 1;
+}
+
+@mixin transform($argu...) {
+  transform: $argu;
+  -webkit-transform: $argu;
+  -moz-transform: $argu;
+  -o-transform: $argu;
+  -ms-transform: $argu;
+}
+
+@mixin transition($argu...) {
+  transition: $argu;
+  -webkit-transition: $argu;
+  -moz-transition: $argu;
+  -o-transition: $argu;
+  -ms-transition: $argu;
+}
+
+@mixin border-radius($argu...) {
+  border-radius: $argu;
+  -webkit-border-radius: $argu;
+  -moz-border-radius: $argu;
+  -o-border-radius: $argu;
+  -ms-border-radius: $argu;
+}
+
+@mixin flex-center {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  justify-content: center;
+  align-items: center;
+}

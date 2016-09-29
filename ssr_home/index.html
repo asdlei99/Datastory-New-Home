@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="description" content="DataStory数说故事是中国领先的大数据服务商，专注于为品牌企业提供基于互联网大数据的消费者与市场研究服务，围绕“人、货、场、介”的新型研究体系推出多个大数据解决方案助力品牌升级，旗下三大产品：数说聚合、数说立方和数说雷达分别从数据获取、挖掘、监测为企业提供一站式的大数据应用支撑。" />
+    <meta name="keyword" content="数说故事,datastory,大数据解决方案,大数据bi,大数据分析平台,大数据应用" />
+    <link rel="dns-prefetch" href="//" />
+    <link rel="shortcut icon" href="http://static.datastory.com.cn/business/home/favicon.png" />
+    <title>数说故事</title>
+    {{ STYLE }}
+  </head>
+  <body>
+    {{ APP }}
+    <script type="text/javascript">
+      // decline IE9<
+      function isIE(ver) {
+        var b = document.createElement('b');
+        b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->';
+        return b.getElementsByTagName('i').length === 1;
+      }
+      console.log('IE: ', isIE());
+      if (isIE(9) || isIE(8) || isIE(7) || isIE(6)) {
+        alert("您的浏览器版本过低,为了获得更好的浏览体验,请使用最新版的IE、edge、chrome或firefox等浏览器。");
+      }
+    </script>
+    <!-- GaoDe map API -->
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&amp;key=65f5492cbf30503e3a5b9b1ecffe2796"></script>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?fdc5b75590cc782a1be051fd1c427a12";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <!-- For Production -->
+    <script type="text/javascript" src="http://static.datastory.com.cn/business/home/client-vendor-bundle.js"></script>
+    <script type="text/javascript" src="http://static.datastory.com.cn/business/home/client-bundle.js"></script>
+    <!-- For Development -->
+    <!-- <script type="text/javascript" src="./dist/client-vendor-bundle.js"></script>
+    <script type="text/javascript" src="./dist/client-bundle.js"></script> -->
+  </body>
+</html>
